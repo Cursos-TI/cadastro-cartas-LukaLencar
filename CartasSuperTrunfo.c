@@ -69,5 +69,15 @@ int main() {
   printf("PIB %f\n", pib);
   printf("Número de Pontos Turísticos: %d\n", numturistico);
 
+  //carta jogador n°2
+  printf("Carta Jogador n°2:\n");
+  printf("Estado: %c\n", estado2);
+  printf("Codigo da Carta: %c%s\n", estado2, codigo2);
+  printf("Nome da Cidade: %s", nome);
+  printf("Quantidade Populacional: %d\n", populacao2);
+  printf("Área: %f km²\n", areakm2);
+  printf("PIB %f\n", pib2);
+  printf("Número de Pontos Turísticos: %d\n", numturistico2);
+
 return 0;
 } 
