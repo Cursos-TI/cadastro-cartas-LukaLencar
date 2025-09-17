@@ -6,9 +6,9 @@
 
 int main() {
   
-  int populacao, numturistico;
-  float areakm, pib;
-  char estado, codigo[20], nome[100];
+  int populacao, numturistico, populacao2, numturistico2;
+  float areakm, pib, areakm2, pib2;
+  char estado, codigo[20], nome[100], estado2, codigo2[20], nome2[100];
 //jogador n°1
   printf("Agora começaremos um jogo de Super Trunfo, jogador n°1, digite as informações de sua carta: \n");
   printf("Digite a opção de seu estado entre A até H: \n");
@@ -34,11 +34,36 @@ int main() {
   printf("Digite o numero total de pontos turísticos: \n");
   scanf("%d", &numturistico);
 
+  //jogador n°2
+  printf("Agora jogador n°2, digite as informações de sua carta: \n");
+  printf("Digite a opção de seu estado entre A até H: \n");
+  scanf("%c", &estado2);
+
+  printf("Digite o código de sua carta: \n");
+  scanf("%s", codigo2);
+
+  getchar();
+
+  printf("Digite o nome da cidade: \n");
+  fgets(nome2, 100, stdin);
+
+  printf("Digite o número referente a população: \n");
+  scanf("%d", &populacao2);
+
+  printf("Digite a area total no seu estado: \n");
+  scanf("%f", &areakm2);
+
+  printf("Digite o PIB do seu estado: \n");
+  scanf("%f", &pib2);
+
+  printf("Digite o numero total de pontos turísticos: \n");
+  scanf("%d", &numturistico2);
+
 //carta jogador n°1
   printf("Carta Jogador n°1:\n");
   printf("Estado: %c\n", estado);
   printf("Codigo da Carta: %c%s\n", estado, codigo);
-  printf("Nome da Cidade: %s\n", nome);
+  printf("Nome da Cidade: %s", nome);
   printf("Quantidade Populacional: %d\n", populacao);
   printf("Área: %f km²\n", areakm);
   printf("PIB %f\n", pib);
