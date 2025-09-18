@@ -36,6 +36,9 @@ int main() {
 
   //jogador n°2
   printf("Agora jogador n°2, digite as informações de sua carta: \n");
+
+  getchar();
+
   printf("Digite a opção de seu estado entre A até H: \n");
   scanf("%c", &estado2);
 
@@ -53,6 +56,8 @@ int main() {
   printf("Digite a area total no seu estado: \n");
   scanf("%f", &areakm2);
 
+  getchar();
+
   printf("Digite o PIB do seu estado: \n");
   scanf("%f", &pib2);
 
@@ -60,7 +65,7 @@ int main() {
   scanf("%d", &numturistico2);
 
 //carta jogador n°1
-  printf("Carta Jogador n°1:\n");
+  printf("Carta Jogador n°1 - \n");
   printf("Estado: %c\n", estado);
   printf("Codigo da Carta: %c%s\n", estado, codigo);
   printf("Nome da Cidade: %s", nome);
@@ -68,9 +73,10 @@ int main() {
   printf("Área: %f km²\n", areakm);
   printf("PIB %f\n", pib);
   printf("Número de Pontos Turísticos: %d\n", numturistico);
+  printf("\n");
 
   //carta jogador n°2
-  printf("Carta Jogador n°2:\n");
+  printf("Carta Jogador n°2 - \n");
   printf("Estado: %c\n", estado2);
   printf("Codigo da Carta: %c%s\n", estado2, codigo2);
   printf("Nome da Cidade: %s", nome);
