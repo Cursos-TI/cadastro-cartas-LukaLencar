@@ -7,7 +7,7 @@
 int main() {
   
   int populacao, numturistico, populacao2, numturistico2;
-  float areakm, pib, areakm2, pib2;
+  float areakm, pib, areakm2, pib2, densidadepop1, densidadepop2, pipcapita1, pipcapita2;
   char estado, codigo[20], nome[100], estado2, codigo2[20], nome2[100];
 //jogador n°1
   printf("Agora começaremos um jogo de Super Trunfo, jogador n°1, digite as informações de sua carta: \n");
