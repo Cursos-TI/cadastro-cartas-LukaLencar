@@ -35,7 +35,7 @@ int main() {
   scanf("%d", &numturistico);
 
   densidadepop = (populacao / areakm);
-  pibcapita = (pib / populacao);
+  pibcapita = (pib * 1000000000) / populacao;
 
   //jogador n°2
   printf("Agora jogador n°2, digite as informações de sua carta: \n");
@@ -68,7 +68,7 @@ int main() {
   scanf("%d", &numturistico2);
 
   densidadepop2 = (populacao2 / areakm2);
-  pibcapita2 = (pib2 / populacao2);
+  pibcapita2 = (pib2 * 1000000000) / populacao2;
 
 //carta jogador n°1
   printf("Carta Jogador n°1 - \n");
