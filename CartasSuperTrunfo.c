@@ -26,10 +26,10 @@ int main() {
   scanf("%d", &populacao);
 
   printf("Digite a area total no seu estado: \n");
-  scanf("%.2f", &areakm);
+  scanf("%f", &areakm);
 
   printf("Digite o PIB do seu estado: \n");
-  scanf("%.2f", &pib);
+  scanf("%f", &pib);
 
   printf("Digite o numero total de pontos turísticos: \n");
   scanf("%d", &numturistico);
@@ -57,12 +57,12 @@ int main() {
   scanf("%d", &populacao2);
 
   printf("Digite a area total no seu estado: \n");
-  scanf("%.2f", &areakm2);
+  scanf("%f", &areakm2);
 
   getchar();
 
   printf("Digite o PIB do seu estado: \n");
-  scanf("%.2f", &pib2);
+  scanf("%f", &pib2);
 
   printf("Digite o numero total de pontos turísticos: \n");
   scanf("%d", &numturistico2);
