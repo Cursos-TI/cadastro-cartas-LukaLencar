@@ -77,15 +77,6 @@ int main() {
   inversoDensidadePop2 = (areakm2 / populacao2);
   superPoder2 = (populacao2 + areakm2 + pib2 + numturistico2 + pibcapita2 + inversoDensidadePop2);
 
-// Comparação entre as cartas
-  resultPop = (populacao > populacao2);
-  resultArea = (areakm > areakm2);
-  resultPib = (pib > pib2);
-  resultPontT = (numturistico > numturistico2);
-  resultDensP = (densidadepop < densidadepop2);
-  resultPibPC = (pibcapita > pibcapita2);
-  resultSuperP = (superPoder > superPoder2);
-
 //carta jogador n°1
   printf("Carta Jogador n°1 - \n");
   printf("Estado: %c\n", estado);
@@ -116,13 +107,21 @@ int main() {
 
   //Resultados
   printf("**Resultado das Comparações**\n");
-  printf("População: Carta %d venceu\n", 2 - resultPop);
-  printf("Área: Carta %d venceu\n", 2 - resultArea); 
-  printf("PIB: Carta %d venceu\n", 2 - resultPib); 
-  printf("Pontos Turísticos: Carta %d venceu\n", 2 - resultPontT); 
-  printf("Densidade Populacional: Carta %d venceu\n", 2 - resultDensP); 
-  printf("PIB per capita: Carta %d venceu\n", 2 - resultPibPC); 
-  printf("Super Poder: Carta %d venceu\n", 2 - resultSuperP); 
-
-return 0;
+  printf("Quantidade Populanional Carta 01: %lu", populacao);
+  printf("Quantidade Populanional Carta 02: %lu", populacao2);
+  if (populacao > populacao2){
+    printf("Carta 01 (%c) venceu!!!", estado);
+  } else{
+    printf("Carta 02 (%c) venceu!!!", estado2);
+  }
+  printf("\n");
+  printf("Número de Pontos Turísticos Carta 01: %lu", numturistico);
+  printf("Número de Pontos Turísticos Carta 02: %lu", numturistico2);
+  if (numturistico > numturistico2){
+    printf("Carta 01 (%c) venceu!!!", estado);
+  } else{
+    printf("Carta 02 (%c) venceu!!!", estado2);
+  }
+  
+  return 0;
 } 
