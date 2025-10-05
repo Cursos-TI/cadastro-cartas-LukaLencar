@@ -107,20 +107,20 @@ int main() {
 
   //Resultados
   printf("**Resultado das Comparações**\n");
-  printf("Quantidade Populanional Carta 01: %lu", populacao);
-  printf("Quantidade Populanional Carta 02: %lu", populacao2);
+  printf("Quantidade Populanional Carta 01: %lu\n", populacao);
+  printf("Quantidade Populanional Carta 02: %lu\n", populacao2);
   if (populacao > populacao2){
-    printf("Carta 01 (%c) venceu!!!", estado);
+    printf("Carta 01 (%c) venceu!!!\n", estado);
   } else{
-    printf("Carta 02 (%c) venceu!!!", estado2);
+    printf("Carta 02 (%c) venceu!!!\n", estado2);
   }
   printf("\n");
-  printf("Número de Pontos Turísticos Carta 01: %lu", numturistico);
-  printf("Número de Pontos Turísticos Carta 02: %lu", numturistico2);
+  printf("Número de Pontos Turísticos Carta 01: %lu\n", numturistico);
+  printf("Número de Pontos Turísticos Carta 02: %lu\n", numturistico2);
   if (numturistico > numturistico2){
-    printf("Carta 01 (%c) venceu!!!", estado);
+    printf("Carta 01 (%c) venceu!!!\n", estado);
   } else{
-    printf("Carta 02 (%c) venceu!!!", estado2);
+    printf("Carta 02 (%c) venceu!!!\n", estado2);
   }
   
   return 0;
