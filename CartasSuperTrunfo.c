@@ -110,17 +110,17 @@ int main() {
   printf("Quantidade Populanional Carta 01: %lu\n", populacao);
   printf("Quantidade Populanional Carta 02: %lu\n", populacao2);
   if (populacao > populacao2){
-    printf("Carta 01 (%c) venceu!!!\n", estado);
+    printf("Carta 01 (%s) venceu!!!\n", nome);
   } else{
-    printf("Carta 02 (%c) venceu!!!\n", estado2);
+    printf("Carta 02 (%s) venceu!!!\n", nome2);
   }
   printf("\n");
   printf("Número de Pontos Turísticos Carta 01: %lu\n", numturistico);
   printf("Número de Pontos Turísticos Carta 02: %lu\n", numturistico2);
   if (numturistico > numturistico2){
-    printf("Carta 01 (%c) venceu!!!\n", estado);
+    printf("Carta 01 (%s) venceu!!!\n", nome);
   } else{
-    printf("Carta 02 (%c) venceu!!!\n", estado2);
+    printf("Carta 02 (%s) venceu!!!\n", nome2);
   }
   
   return 0;
