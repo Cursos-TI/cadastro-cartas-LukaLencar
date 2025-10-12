@@ -7,8 +7,8 @@
 int main() {
   
   unsigned long int populacao, populacao2;
-  int numturistico, numturistico2, comparacao; 
-  int resultPop, resultArea, resultPib, resultPontT, resultDensP, resultPibPC, resultSuperP;
+  int numturistico, numturistico2;
+  int comparacao;
   float areakm, pib, areakm2, pib2, densidadepop, densidadepop2, pibcapita, pibcapita2;
   float superPoder, superPoder2, inversoDensidadePop, inversoDensidadePop2;
   char estado, codigo[20], nome[100], estado2, codigo2[20], nome2[100];
@@ -21,13 +21,12 @@ int main() {
   printf("4. Número de Pontos Turísticos");
   printf("5. Densidade Populacional");
   printf("6. PIB per Capita");
-  printf("7. Inverso da Densidade Populacional");
-  printf("8. Super Poder");
+  printf("7. Super Poder");
   scanf("%d", &comparacao);
 
 //jogador n°1
   printf("Jogador n°1, digite as informações de sua carta: \n");
-  printf("Digite a opção de seu estado entre A até H: \n");
+  printf("Digite a opção de seu estado entre A até Z: \n");
   scanf("%c", &estado);
 
   printf("Digite o código de sua carta: \n");
@@ -60,7 +59,7 @@ int main() {
 
   getchar();
 
-  printf("Digite a opção de seu estado entre A até H: \n");
+  printf("Digite a opção de seu estado entre A até Z: \n");
   scanf("%c", &estado2);
 
   printf("Digite o código de sua carta: \n");
@@ -120,20 +119,21 @@ int main() {
 
   //Resultados
   printf("**Resultado das Comparações**\n");
-  printf("Quantidade Populanional Carta 01: %lu\n", populacao);
-  printf("Quantidade Populanional Carta 02: %lu\n", populacao2);
-  if (populacao > populacao2){
-    printf("Carta 01 (%s) venceu!!!\n", nome);
-  } else{
-    printf("Carta 02 (%s) venceu!!!\n", nome2);
-  }
-  printf("\n");
-  printf("Número de Pontos Turísticos Carta 01: %lu\n", numturistico);
-  printf("Número de Pontos Turísticos Carta 02: %lu\n", numturistico2);
-  if (numturistico > numturistico2){
-    printf("Carta 01 (%s) venceu!!!\n", nome);
-  } else{
-    printf("Carta 02 (%s) venceu!!!\n", nome2);
+  switch (comparacao)
+  {
+  case 1:
+    if (populacao > populacao2){
+      printf("Jogador N°1 Venceu! - População carta 1: %lu x População carta 2: %lu\n", populacao, populacao2);
+    } else if (populacao < populacao2){
+      printf("Jogador N°2 Venceu! - População carta 1: %lu x População carta 2: %lu\n", populacao, populacao2);
+    } else{
+      printf("Empate!\n");
+    }
+    break;
+  
+  default:
+      printf("Opção Inválida!\n");
+    break;
   }
   
   return 0;
