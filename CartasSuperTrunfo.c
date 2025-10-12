@@ -5,13 +5,13 @@ int main() {
   
   unsigned long int populacao, populacao2;
   int numturistico, numturistico2;
-  int comparacao;
+  int comparacao, comparacao2, resultado, resultado2;
   float areakm, pib, areakm2, pib2, densidadepop, densidadepop2, pibcapita, pibcapita2;
   float superPoder, superPoder2, inversoDensidadePop, inversoDensidadePop2;
   char estado, codigo[20], nome[100], estado2, codigo2[20], nome2[100];
 //Menu do Jogo
   printf("Agora começaremos um jogo de Super Trunfo!\n");
-  printf("Primeiramente, escolha qual das opções abaixo será o fator de comparação: \n");
+  printf("Primeiramente, escolha qual das opções abaixo será o fator da Primeira Comparação: \n");
   printf("1. População (vence o maior)\n");
   printf("2. Área por km² (vence o maior)\n");
   printf("3. PIB (vence o maior)\n");
@@ -20,6 +20,91 @@ int main() {
   printf("6. PIB per Capita (vence o maior)\n");
   printf("7. Super Poder (vence o maior)\n");
   scanf("%d", &comparacao);
+
+  switch (comparacao)
+  {
+  case 1:
+    printf("Você escolheu a opção 1 - População\n");
+    resultado = populacao > populacao2 ? 1 : 0;
+    break;
+  case 2:
+    printf("Você escolheu a opção 2 - Área por km²\n");
+    resultado = areakm > areakm2 ? 1 : 0;
+    break;
+  case 3:
+    printf("Você escolheu a opção 3 - PIB\n");
+    resultado = pib > pib2 ? 1 : 0;
+    break;
+  case 4:
+    printf("Você escolheu a opção 4 - Número de Pontos Turísticos\n");
+    resultado = numturistico > numturistico2 ? 1 : 0;
+    break;
+  case 5:
+    printf("Você escolheu a opção 5 - Densidade Populacional\n");
+    resultado = densidadepop < densidadepop2 ? 1 : 0;
+    break;
+  case 6:
+    printf("Você escolheu a opção 6 - PIB per Capita\n");
+    resultado = pibcapita > pibcapita2 ? 1 : 0;
+    break;
+  case 7:
+    printf("Você escolheu a opção 7 - Super Poder\n");
+    resultado = superPoder > superPoder2 ? 1 : 0;
+    break;
+  default:
+    printf("Opção Inválida"); 
+    break;
+  }
+
+  printf("Agora, escolha o Segundo fator de Comparação: \n");
+  printf("***ATENÇÃO - ESCOLHA UMA OPÇÃO DIFERENTE DA ANTERIOR***\n");
+  printf("1. População (vence o maior)\n");
+  printf("2. Área por km² (vence o maior)\n");
+  printf("3. PIB (vence o maior)\n");
+  printf("4. Número de Pontos Turísticos (vence o maior)\n");
+  printf("5. Densidade Populacional (vence o menor)\n");
+  printf("6. PIB per Capita (vence o maior)\n");
+  printf("7. Super Poder (vence o maior)\n");
+  scanf("%d", &comparacao2);
+
+  if (comparacao == comparacao2){
+    printf("Você escolheu o mesmo fator de comparação!!!");
+  } else {
+    switch (comparacao2)
+  {
+  case 1:
+    printf("Você escolheu a opção 1 - População\n");
+    resultado2 = populacao > populacao2 ? 1 : 0;
+    break;
+  case 2:
+    printf("Você escolheu a opção 2 - Área por km²\n");
+    resultado2 = areakm > areakm2 ? 1 : 0;
+    break;
+  case 3:
+    printf("Você escolheu a opção 3 - PIB\n");
+    resultado2 = pib > pib2 ? 1 : 0;
+    break;
+  case 4:
+    printf("Você escolheu a opção 4 - Número de Pontos Turísticos\n");
+    resultado2 = numturistico > numturistico2 ? 1 : 0;
+    break;
+  case 5:
+    printf("Você escolheu a opção 5 - Densidade Populacional\n");
+    resultado2 = densidadepop < densidadepop2 ? 1 : 0;
+    break;
+  case 6:
+    printf("Você escolheu a opção 6 - PIB per Capita\n");
+    resultado2 = pibcapita > pibcapita2 ? 1 : 0;
+    break;
+  case 7:
+    printf("Você escolheu a opção 7 - Super Poder\n");
+    resultado2 = superPoder > superPoder2 ? 1 : 0;
+    break;
+  default:
+    printf("Opção Inválida"); 
+    break;
+  }
+  }
 
 //jogador n°1
   printf("Jogador n°1, digite as informações de sua carta: \n");
