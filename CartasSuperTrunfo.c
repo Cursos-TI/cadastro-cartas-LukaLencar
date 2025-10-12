@@ -7,7 +7,7 @@
 int main() {
   
   unsigned long int populacao, populacao2;
-  int numturistico, numturistico2; 
+  int numturistico, numturistico2, comparacao; 
   int resultPop, resultArea, resultPib, resultPontT, resultDensP, resultPibPC, resultSuperP;
   float areakm, pib, areakm2, pib2, densidadepop, densidadepop2, pibcapita, pibcapita2;
   float superPoder, superPoder2, inversoDensidadePop, inversoDensidadePop2;
@@ -23,6 +23,8 @@ int main() {
   printf("6. PIB per Capita");
   printf("7. Inverso da Densidade Populacional");
   printf("8. Super Poder");
+  scanf("%d", &comparacao);
+
 //jogador n°1
   printf("Jogador n°1, digite as informações de sua carta: \n");
   printf("Digite a opção de seu estado entre A até H: \n");
