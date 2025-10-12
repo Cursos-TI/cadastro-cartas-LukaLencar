@@ -12,8 +12,19 @@ int main() {
   float areakm, pib, areakm2, pib2, densidadepop, densidadepop2, pibcapita, pibcapita2;
   float superPoder, superPoder2, inversoDensidadePop, inversoDensidadePop2;
   char estado, codigo[20], nome[100], estado2, codigo2[20], nome2[100];
+//Menu do Jogo
+  printf("Agora começaremos um jogo de Super Trunfo!\n");
+  printf("Primeiramente, escolha qual das opções abaixo será o fator de comparação: \n");
+  printf("1. População");
+  printf("2. Área por km²");
+  printf("3. PIB");
+  printf("4. Número de Pontos Turísticos");
+  printf("5. Densidade Populacional");
+  printf("6. PIB per Capita");
+  printf("7. Inverso da Densidade Populacional");
+  printf("8. Super Poder");
 //jogador n°1
-  printf("Agora começaremos um jogo de Super Trunfo, jogador n°1, digite as informações de sua carta: \n");
+  printf("Jogador n°1, digite as informações de sua carta: \n");
   printf("Digite a opção de seu estado entre A até H: \n");
   scanf("%c", &estado);
 
