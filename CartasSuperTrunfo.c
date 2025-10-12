@@ -427,5 +427,16 @@ int main() {
     break;
   }
   
+  if (pontoJogador1 > pontoJogador2){
+    printf("**Jogador N°1 Venceu**\n");
+    printf("**%d x %d para Jogador N°1**\n", pontoJogador1, pontoJogador2);
+  } else if (pontoJogador1 < pontoJogador2){
+    printf("**Jogador N°2 Venceu**\n");
+    printf("**%d x %d para Jogador N°2**\n", pontoJogador2, pontoJogador1);
+  } else {
+    printf("**Empate entre os Jogadores**\n");
+    printf("%d x %d", pontoJogador1, pontoJogador2);
+  }
+
   return 0;
 } 
