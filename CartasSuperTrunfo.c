@@ -15,19 +15,19 @@ int main() {
 //Menu do Jogo
   printf("Agora começaremos um jogo de Super Trunfo!\n");
   printf("Primeiramente, escolha qual das opções abaixo será o fator de comparação: \n");
-  printf("1. População");
-  printf("2. Área por km²");
-  printf("3. PIB");
-  printf("4. Número de Pontos Turísticos");
-  printf("5. Densidade Populacional");
-  printf("6. PIB per Capita");
-  printf("7. Super Poder");
+  printf("1. População\n");
+  printf("2. Área por km²\n");
+  printf("3. PIB\n");
+  printf("4. Número de Pontos Turísticos\n");
+  printf("5. Densidade Populacional\n");
+  printf("6. PIB per Capita\n");
+  printf("7. Super Poder\n");
   scanf("%d", &comparacao);
 
 //jogador n°1
   printf("Jogador n°1, digite as informações de sua carta: \n");
   printf("Digite a opção de seu estado entre A até Z: \n");
-  scanf("%c", &estado);
+  scanf(" %c", &estado);
 
   printf("Digite o código de sua carta: \n");
   scanf("%s", codigo);
@@ -123,14 +123,21 @@ int main() {
   {
   case 1:
     if (populacao > populacao2){
-      printf("Jogador N°1 Venceu! - População carta 1: %lu x População carta 2: %lu\n", populacao, populacao2);
+      printf("Jogador N°1 - Cidade: %s\n", nome);
+      printf("Jogador N°2 - Cidade: %s\n", nome2);
+      printf("População carta 1: %lu x População carta 2: %lu\n",populacao, populacao2);
+      printf("## Jogador N°1 Venceu! ##\n");
     } else if (populacao < populacao2){
-      printf("Jogador N°2 Venceu! - População carta 1: %lu x População carta 2: %lu\n", populacao, populacao2);
+      printf("Jogador N°1 - Cidade: %s\n", nome);
+      printf("Jogador N°2 - Cidade: %s\n", nome2);
+      printf("População carta 1: %lu x População carta 2: %lu\n",populacao, populacao2);
+      printf("## Jogador N°2 Venceu! ##\n");
     } else{
       printf("Empate!\n");
     }
     break;
   
+    
   default:
       printf("Opção Inválida!\n");
     break;
